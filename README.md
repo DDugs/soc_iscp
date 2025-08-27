@@ -15,7 +15,7 @@ Specifically, the system should:
 
 ## Deployment Layers Considered
 
-### 1. **API Gateway Plugin (Primary Layer)**
+### 1. **API Gateway Plugin**
 - **Why here?**  
   Most PII leaks start in API payloads or logs. The API gateway is a natural choke point—every external API call flows through it. If we intercept here, we can redact data *before* it’s logged or sent downstream.  
 
@@ -66,9 +66,9 @@ No single layer is enough. The best approach is **layered protection**:
 - **Middleware Library** → Redundancy for internal dashboards and tools.  
 
 This way, we cover all angles:  
-- External API traffic ✔️  
-- Internal microservice logs ✔️  
-- Admin dashboards & tools ✔️  
+- External API traffic   
+- Internal microservice logs 
+- Admin dashboards & tools 
 
 ---
 
