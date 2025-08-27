@@ -1,1 +1,2 @@
-# soc_iscp
+# ISCP_SOC CHALL
+Usage - python3 detector_full_candidate_name.py iscp_pii_dataset.csv
